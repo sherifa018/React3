@@ -15,13 +15,13 @@ function App() {
     } else alert("Invalid Input,Try Again");
   };
   return (
-    <>
+    <div>
       <div>
         {role === "admin" && <AdminDashboard />}
         {role === "user" && <UserDashBoard />}
         {role === "" && <Form onLogin={handleLogin} />}
       </div>
-    </>
+    </div>
   );
 }
 
